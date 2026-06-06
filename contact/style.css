@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "PixelMplus10";
+  src: url("./profile/assets/fonts/PixelMplus10-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  /* COLOR */
+  --black: #000;
+  --white: #fff;
+  --gray-light: #e5e5e5;
+  --gray-dark: #555;
+
+  --clr-bg-primary: #fff;
+  --clr-bg-secondary: #111;
+
+  --clr-bg-hov-gray: #555;
+  --clr-bg-hov-black: #111;
+
+  --clr-text-main: #111;
+  --clr-text-sub: #555;
+  --clr-text-white: #f1f1f1;
+
+  /* FONT */
+  --fs-xxs: clamp(0.65rem, 0.6vw, 0.75rem);
+  --fs-xs: clamp(0.8rem, 0.8vw, 0.875rem);
+  --fs-sm: clamp(0.87rem, 1vw, 1rem);
+  --fs-base: clamp(0.9rem, 1.2vw, 1.125rem);
+  --fs-md: clamp(1.5rem, 1.6vw, 2rem);
+  --fs-lg: clamp(0.95rem, 1.2vw, 1.25rem);
+  --fs-xl: clamp(1.25rem, 1.6vw, 1.5rem);
+  --fs-2xl: clamp(1.35rem, 2vw, 1.84rem);
+  --fs-3xl: clamp(1.875rem, 2.5vw, 2.25rem);
+  --fs-4xl: clamp(2.25rem, 3vw, 3rem);
+
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /*  FONT FAMILY  */
+  --font-pixel: "VT323", monospace;
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-goth: "DotGothic16", sans-serif;
+
+  /*  SPACING */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  --space-fluid-sm: clamp(0.7rem, 2vw, 0.2rem);
+  --space-fluid-md: clamp(0.75rem, 6vw, 1.2rem);
+
+  /*  SHADOW  */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.18);
+
+  /*  RADIUS */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  /*  TRANSITION */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /*  LAYOUT WIDTH */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+
+  --max-width: 1200px;
+
+  --line-height-base: 1.5;
+
+  /* PADDING */
+  --pad-inl: 1.9rem;
+  --pad-inl-mobile: 1.3rem;
+
+  --pad-blo: 1.9rem;
+  --pad-blo-mobile: 1.2rem;
+
+  /* MARGIN  */
+  --margin-desk: 2rem;
+  --margin-mobile: 1rem;
+}
+
+/*  EFFECT SCROLL */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  filter: blur(4px);
+  transition: opacity 0.7s ease-out, transform 0.5s ease-out,
+    filter 0.7s ease-out;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/*  EFFECT HOVER */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+.noselect {
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.popup-open .reveal-up {
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+body {
+  background-color: var(--white);
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.box__wrapper {
+  background : #545454ff;
+  margin : 50px 30px;
+  border-radius : 20px;
+}
+
+.box__layout {
+  display : flex;
+  flex-direction : column;
+}
+
+.box__top {
+  display : flex;
+  justify-content : space-between;
+  background : var(--black);
+  padding : 8px;
+  margin : 20px;
+  border-radius : 8px;
+  align-items : center;
+}
+
+.box__top h2 {
+  color : var(--white);
+  font-size : 20px;
+  padding-inline : 5px;
+}
+
+.box__top button {
+  background : red;
+  padding : 2px 5px;
+  color : var(--black);
+  font-size : 10px;
+  border-radius : 8px;
+}
+
+.box__content {
+  display : flex;
+  flex-direction : row;
+}
+
+.box__left {
+  background : var(--black);
+  margin : 10px 20px;
+  border-radius : 10px;
+  width : 200px;
+}
+
+.box__navi {
+  background : #545454ff;
+  margin : 10px;
+  display : flex;
+  gap : 10px;
+  justify-content : center;
+  align-items : center;
+  padding : 15px;
+  border-radius : 8px;
+}
+
+.contact__wrapper {
+  display : flex;
+  flex-direction : column;
+  gap : 10px;
+  margin : 10px;
+}
+
+.box__contact {
+  background : rgba(56, 57, 55, 1);
+  border-radius : 20px;
+  padding : 15px;
+}
+
+.box__contact h3 {
+  color : white;
+}
+
+.box__contact p {
+  color : white;
+}
+
+.box__navi h3 {
+  font-size : 15px;
+  color : var(--white);
+}
+
+.box__right {
+  background : black;
+  border-radius : 20px;
+  width : 100%;
+  margin-right : 20px;
+}
+
+.box__right h2 {
+  color : white;
+  padding : 20px;
+}

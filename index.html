@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kyohiiro</title>
+  <meta name="description" content="A retro-pixel styled personal homepage. Serves as a central hub to my portofolio, journey, archieve, and contact page.">
+
+  <meta name="theme-color" content="#111">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/akyoicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/akyoicon.png">
+
+
+  <!--  FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=VT323&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body> 
+<main id="mainContent">
+
+  <!--  PRELOADER  -->
+    <div id="preloader">
+      <div class="loader__wrap">
+        <div class="loader__indicator">
+            <div class="typing-circle"></div>
+            <div class="typing-circle"></div>
+            <div class="typing-circle"></div>
+            <div class="typing-shadow"></div>
+            <div class="typing-shadow"></div>
+            <div class="typing-shadow"></div>
+        </div>
+      </div>
+    </div>
+  <!--  PRELOADER END  -->
+
+  <div class="bg__color">
+  <div class="background__body"></div>
+
+  <!--  MAIN CONTENT  -->
+  <div class="top">
+    <h1 id="title"></h1>
+  </div>
+
+  <nav class="nav__container hidden">
+    <a href="index.html">TOP</a>
+    <a 
+      href="./profile/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >ABOUT</a>
+    <a 
+      href="./archive/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >ARCHIVE</a>
+    <a href="#">COLLABO</a>
+    <a href="#">CONTACT</a>
+  </nav>
+
+    <!-- RETRO WINDOW CARD -->
+  <div class="retro__window image effect__card" id="win1">
+    <div class="retro__header">
+      <h2><span class="rehead__style">Take a look ☕︎</span></h2>
+      <button class="close__btn" aria-label="Close"></button></div>
+    <div class="retro__body">
+      <img 
+        src="assets/project-porto.png" 
+        alt="project pict"/>
+    </div>
+    <div class="retro__footer">
+      <a 
+        href="./profile/" 
+        target="_blank" 
+        rel="noopener noreferrer"  
+        class="retro__btn left">
+      Open</a>
+      <button class="retro__btn right footer__close">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <div class="retro__window normal effect__card" id="win2">
+    <div class="retro__header">
+      <h2>News <span class="rehead__style">2026.01.11</span>
+
+      </h2>
+      <button class="close__btn" aria-label="Close"></button></div>
+    <div class="retro__body">
+      <p>Journey bentar lagi kelar keknya...</p>
+    </div>
+    <div class="retro__footer">
+      <button class="retro__btn lef footer__close">
+        Ok
+      </button>
+      <button class="retro__btn right footer__close">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <div class="retro__window normal effect__card" id="win3">
+    <div class="retro__header">
+      <h2>News <span class="rehead__style">2026.01.11</span>
+      </h2>
+      <button class="close__btn" aria-label="Close"></button></div>
+    <div class="retro__body">
+      <p>Archieve masih cari konsep...</p>
+    </div>
+    <div class="retro__footer">
+      <button class="retro__btn lef footer__close">
+        Ok
+      </button>
+      <button class="retro__btn right footer__close">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <div class="retro__window normal effect__card" id="win4">
+    <div class="retro__header">
+      <h2>News <span class="rehead__style">2026.01.12</span>
+      </h2>
+      <button class="close__btn" aria-label="Close"></button></div>
+    <div class="retro__body">
+      <p>Collabo bentar lagi kelar asli...</p>
+    </div>
+    <div class="retro__footer">
+      <button class="retro__btn lef footer__close">
+        Ok
+      </button>
+      <button class="retro__btn right footer__close">
+        Close
+      </button>
+    </div>
+  </div>
+
+  
+    <div class="retro__window normal effect__card" id="win5">
+    <div class="retro__header">
+      <h2>News <span class="rehead__style">2026.01.11</span>
+      </h2>
+      <button class="close__btn" aria-label="Close"></button></div>
+    <div class="retro__body">
+      <p>Contact sementara bisa di cek lewat about ya ...</p>
+    </div>
+    <div class="retro__footer">
+      <button class="retro__btn lef footer__close">
+        Ok
+      </button>
+      <button class="retro__btn right footer__close">
+        Close
+      </button>
+    </div>
+  </div>
+ <!--  RETRO WINDOW CARD END  -->
+
+  <!--  FOOTER -->
+  <footer>
+    <div class="footer__section reveal-up">
+      <div class="footer__left"> 
+        <a 
+          href="https://github.com/kyohiiro">
+            <img 
+              src="assets/github-oix.png" 
+              title="Kunjungi Github"
+              alt="github icon" 
+              target="_blank" 
+              rel="noopener noreferrer" > 
+        </a>
+
+        <a 
+          href="https://www.instagram.com/kyohiiro">
+            <img 
+              src="assets/fix-insta.png" 
+              title="kunjungi Instagram"
+              alt="insta icon" 
+              target="_blank" 
+              rel="noopener noreferrer">
+        </a>
+      </div>  
+
+      <div class="footer__right"> 
+        <p>ALL RIGHT RESERVED 2026©Kyohiiro</p>
+      </div> 
+    </div>
+  </footer>  
+  <!--  FOOTER END  -->
+
+</div>
+
+
+
+</main>
+<script src="script.js" defer></script>  
+</body>
+</html>
+
