@@ -1,4 +1,4 @@
-# Kyohiiro — Kyohiiro Lab
+# Kyohiiro — KyoLab
 
 A retro-pixel styled personal homepage built with HTML, CSS, and JavaScript
 
