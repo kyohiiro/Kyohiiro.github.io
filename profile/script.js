@@ -59,6 +59,13 @@ hamburger.addEventListener("click", () => {
   document.querySelector(".navbar").classList.toggle("active");
 });
 
+//   HERO NAME
+const heroName = document.querySelector('.hero__name');
+
+setInterval(() => {
+  heroName.classList.toggle('show-brand');
+}, 3000); 
+
 // DATA popup
 const skillData = {
   HTML: {
